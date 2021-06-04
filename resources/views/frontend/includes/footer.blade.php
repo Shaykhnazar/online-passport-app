@@ -1,4 +1,4 @@
-@include ('frontend.includes.footer-comment-area')
+{{--@include ('frontend.includes.footer-comment-area')--}}
 
 <footer class="footer section pt-6 pt-md-8 pt-lg-10 pb-3 bg-primary text-white overflow-hidden">
     <div class="pattern pattern-soft top"></div>
@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-4 mb-4 mb-lg-0">
                 <a class="footer-brand mr-lg-5 d-flex" href="/">
-                    <img src="{{asset('img/backend-logo.jpg')}}" height="35" class="mr-3" alt="Footer logo">
+                    <img src="{{asset('img/passport_logo.png')}}"  class="mr-3" alt="Footer logo">
                 </a>
                 <p class="my-4">
                     {!! setting('meta_description') !!}
