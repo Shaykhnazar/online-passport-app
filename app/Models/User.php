@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Modules\Passport\Entities\Passport;
+use Modules\Ticket\Entities\Ticket;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\Permission\Traits\HasRoles;
 
@@ -60,6 +61,14 @@ class User extends Authenticatable implements HasMedia, MustVerifyEmail
     public function passports()
     {
         return $this->hasMany(Passport::class);
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function tickets()
+    {
+        return $this->hasMany(Ticket::class);
     }
 
     /**

@@ -46,6 +46,7 @@ Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
         */
         $module_name = 'users';
         $controller_name = 'UserController';
+        Route::get("profile/{id}/tickets", ['as' => "$module_name.tickets", 'uses' => "$controller_name@tickets"]);
         Route::get("profile/{id}", ['as' => "$module_name.profile", 'uses' => "$controller_name@profile"]);
         Route::get('profile/{id}/edit', ['as' => "$module_name.profileEdit", 'uses' => "$controller_name@profileEdit"]);
         Route::patch('profile/{id}/edit', ['as' => "$module_name.profileUpdate", 'uses' => "$controller_name@profileUpdate"]);

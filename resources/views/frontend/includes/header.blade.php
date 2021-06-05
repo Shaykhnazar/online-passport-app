@@ -84,6 +84,18 @@
                                             <span class="small">@lang('labels.frontend.common.view_profile_details')</span>
                                         </div>
                                     </a>
+                                        @if(auth()->user()->tickets()->count() != null)
+                                        <a href="{{ route('frontend.users.tickets', auth()->user()->id) }}"
+                                            class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                            <span class="icon icon-sm icon-warning"><i class="fas fa-ticket-alt"></i></span>
+                                            <div class="ml-4">
+                                                <span class="text-dark d-block">
+                                                    @lang('Mening arizalarim')
+                                                </span>
+                                                <span class="small">@lang('Sizning barcha arizalaringiz!')</span>
+                                            </div>
+                                        </a>
+                                        @endif
                                     <a href="{{ route('logout') }}"
                                         class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4" onclick="event.preventDefault(); document.getElementById('account-logout-form').submit();">
                                         <span class="icon icon-sm icon-secondary">

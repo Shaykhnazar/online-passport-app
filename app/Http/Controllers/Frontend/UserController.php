@@ -15,6 +15,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Log;
+use Modules\Ticket\Entities\Ticket;
 
 class UserController extends Controller
 {
@@ -99,6 +100,39 @@ class UserController extends Controller
         $meta_page_type = 'profile';
 
         return view("frontend.$module_name.profile", compact('module_name', 'module_name_singular', "$module_name_singular", 'module_icon', 'module_action', 'module_title', 'body_class', 'userprofile', 'meta_page_type'));
+    }
+
+    /**
+     * Display Tickets list of Logged in user.
+     *
+     * @param int $id
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function tickets($id)
+    {
+        $module_title = $this->module_title;
+        $module_name = $this->module_name;
+        $module_path = $this->module_path;
+        $module_icon = $this->module_icon;
+        $module_model = $this->module_model;
+        $module_name_singular = Str::singular($module_name);
+        $module_action = 'Tickets';
+
+        $$module_name_singular = $module_model::findOrFail($id);
+
+        if ($$module_name_singular) {
+            $tickets = Ticket::where('user_id', $id)->get();
+        } else {
+            Log::error('Tickets Exception for User: '.optional($$module_name_singular->name));
+            abort(404);
+        }
+
+        $body_class = 'profile-page';
+
+        $meta_page_type = 'profile';
+
+        return view("frontend.$module_name.tickets", compact('module_name', 'module_name_singular', "$module_name_singular", 'module_icon', 'module_action', 'module_title', 'body_class', 'tickets', 'meta_page_type'));
     }
 
     /**

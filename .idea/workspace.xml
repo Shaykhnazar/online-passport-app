@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8117c509-ef41-4072-b584-a57af3297b3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/TicketRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/ticket.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/users/tickets.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/Auth/PermissionRoleTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/Auth/PermissionRoleTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/Auth/UserRoleTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/Auth/UserRoleTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/Auth/UserTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/Auth/UserTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/uz/labels.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/uz/labels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/feedback/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/feedback/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/includes/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/users/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/users/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -212,18 +204,18 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Requests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/frontend/users" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="ssh.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PROJECTS\Laravel\online-passport-app\resources\views\frontend\users" />
       <recent name="D:\PROJECTS\Laravel\online-passport-app\app\Http\Requests" />
       <recent name="D:\PROJECTS\Laravel\online-passport-app\resources\views\frontend" />
       <recent name="D:\PROJECTS\Laravel\online-passport-app\resources\views\backend" />
       <recent name="D:\PROJECTS\Laravel\online-passport-app\resources\views\backend\feedback" />
-      <recent name="D:\PROJECTS\Laravel\online-passport-app\app\Http\Controllers\Backend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\PROJECTS\Laravel\online-passport-app\app\Models" />
@@ -259,7 +251,7 @@
       <workItem from="1622867990875" duration="8734000" />
       <workItem from="1622885506062" duration="1237000" />
       <workItem from="1622897541603" duration="8568000" />
-      <workItem from="1622912251945" duration="12268000" />
+      <workItem from="1622912251945" duration="15194000" />
     </task>
     <servers />
   </component>
