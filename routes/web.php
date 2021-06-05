@@ -34,6 +34,8 @@ Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     Route::get('support', 'FrontendController@support')->name('support');
     Route::get('contact', 'FrontendController@contact')->name('contact');
     Route::post('contact', 'FrontendController@contactSubmit')->name('contact.post');
+    Route::get('ticket', 'FrontendController@ticket')->name('ticket');
+    Route::post('ticket', 'FrontendController@ticketSubmit')->name('ticket.post');
 
     Route::group(['middleware' => ['auth']], function () {
         /*

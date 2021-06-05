@@ -22,9 +22,9 @@ class PermissionRoleTableSeeder extends Seeder
 
         // Create Roles
         $super_admin = Role::create(['name' => 'super admin']);
-        $admin = Role::create(['name' => 'administrator']);
+//        $admin = Role::create(['name' => 'administrator']);
         $manager = Role::create(['name' => 'manager']);
-        $executive = Role::create(['name' => 'executive']);
+//        $executive = Role::create(['name' => 'executive']);
         $user = Role::create(['name' => 'user']);
 
         // Create Permissions
@@ -58,12 +58,37 @@ class PermissionRoleTableSeeder extends Seeder
         ]);
         echo "\n _Comments_ Permissions Created.";
 
+        \Artisan::call('auth:permission', [
+            'name' => 'customers',
+        ]);
+        echo "\n _Customers_ Permissions Created.";
+
+        \Artisan::call('auth:permission', [
+            'name' => 'tickets',
+        ]);
+        echo "\n _Tickets_ Permissions Created.";
+
+        \Artisan::call('auth:permission', [
+            'name' => 'passports',
+        ]);
+        echo "\n _Passports_ Permissions Created.";
+
+        \Artisan::call('auth:permission', [
+            'name' => 'passport_types',
+        ]);
+        echo "\n _Passport types_ Permissions Created.";
+
+        \Artisan::call('auth:permission', [
+            'name' => 'feedback',
+        ]);
+        echo "\n _Feedback_ Permissions Created.";
+
         echo "\n\n";
 
         // Assign Permissions to Roles
-        $admin->givePermissionTo(Permission::all());
+//        $admin->givePermissionTo(Permission::all());
         $manager->givePermissionTo('view_backend');
-        $executive->givePermissionTo('view_backend');
+//        $executive->givePermissionTo('view_backend');
 
         Schema::enableForeignKeyConstraints();
     }

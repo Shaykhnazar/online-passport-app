@@ -116,7 +116,7 @@
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary">
-                                    @lang("Create account")
+                                    @lang("labels.frontend.register.submit")
                                 </button>
                             </div>
                         </form>
@@ -125,13 +125,13 @@
                 <div class="row mt-3">
                     <div class="col-6 text-left">
                         <a href="{{ route('password.request') }}" class="text-gray">
-                            <small>{{ __('Forgot Your Password?') }}</small>
+                            <small>{{ __('labels.frontend.register.forgot') }}</small>
                         </a>
                     </div>
 
                     <div class="col-6 text-right">
                         <a href="{{ route('login') }}" class="text-gray">
-                            <small>{{ __('Login to account') }}</small>
+                            <small>{{ __('labels.frontend.register.login_account') }}</small>
                         </a>
                     </div>
                 </div>

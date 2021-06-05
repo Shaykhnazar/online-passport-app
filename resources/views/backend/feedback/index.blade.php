@@ -77,7 +77,7 @@
                                 {{ $module_name_singular->email }}
                             </td>
                             <td>
-                                {{ ($module_name_singular->status) ? "New" : "Viewed" }}
+                                {{ (!$module_name_singular->status) ? "New" : "Viewed" }}
                             </td>
                             <td>
                                 {{ $module_name_singular->updated_at->diffForHumans() }}

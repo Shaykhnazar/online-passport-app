@@ -55,7 +55,7 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
-        event(new Registered($user));
+//        event(new Registered($user));
         event(new UserRegistered($user));
 
         return redirect(RouteServiceProvider::HOME);

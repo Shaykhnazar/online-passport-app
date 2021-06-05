@@ -135,7 +135,7 @@
 
                 @else
                     @auth()
-                        <a href="#" class="btn btn-success animate-up-2 mr-3"><i class="fas fa-ticket-alt mr-2"></i> @lang('labels.frontend.common.ticket')</a>
+                        <a href="{{ route('frontend.ticket') }}" class="btn btn-success animate-up-2 mr-3"><i class="fas fa-ticket-alt mr-2"></i> @lang('labels.frontend.common.ticket')</a>
                     @endauth
                 @endcan
 

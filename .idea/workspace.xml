@@ -2,55 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8117c509-ef41-4072-b584-a57af3297b3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/Customers/Http/Middleware/GenerateMenus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customers/Resources/views/backend/customers/changePassword.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customers/Resources/views/backend/customers/changeProfilePassword.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customers/Resources/views/backend/customers/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customers/Resources/views/backend/customers/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customers/Resources/views/backend/customers/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customers/Resources/views/backend/customers/index_datatable.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customers/Resources/views/backend/customers/profile.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customers/Resources/views/backend/customers/profileEdit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customers/Resources/views/backend/customers/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customers/Resources/views/backend/customers/trash.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customers/Resources/views/backend/includes/user_actions.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Ticket/Http/Middleware/GenerateMenus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Ticket/Http/Requests/Backend/TicketRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Ticket/Resources/views/backend/tickets/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Ticket/Resources/views/backend/tickets/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Ticket/Resources/views/backend/tickets/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Ticket/Resources/views/backend/tickets/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Ticket/Resources/views/backend/tickets/index_datatable.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Ticket/Resources/views/backend/tickets/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Ticket/Resources/views/backend/tickets/trash.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_05_202046_create_feedback_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/feedback/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/feedback/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/contact.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/support.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c19db1d-0246-4f1a-853d-f621a16912b6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5c19db1d-0246-4f1a-853d-f621a16912b6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/TicketRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/ticket.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Passport/Http/Controllers/Backend/PassportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Passport/Http/Controllers/Backend/PassportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Passport/Http/Controllers/Backend/PassportTypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Passport/Http/Controllers/Backend/PassportTypeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Passport/Http/Middleware/GenerateMenus.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Passport/Http/Middleware/GenerateMenus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Passport/Http/Requests/Backend/PassportTypeRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Passport/Http/Requests/Backend/PassportTypeRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/BackendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/BackendController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/GenerateMenus.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/GenerateMenus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules_statuses.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules_statuses.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/labels.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/labels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/Auth/PermissionRoleTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/Auth/PermissionRoleTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/Auth/UserRoleTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/Auth/UserRoleTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/Auth/UserTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/Auth/UserTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/uz/labels.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/uz/labels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/includes/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/includes/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/includes/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/feedback/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/feedback/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/includes/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/privacy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/privacy.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/terms.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/terms.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/users/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/users/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -247,18 +212,18 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend/feedback" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Requests" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="ssh.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\PROJECTS\Laravel\online-passport-app\resources\views\backend\feedback" />
-      <recent name="D:\PROJECTS\Laravel\online-passport-app\app\Http\Controllers\Backend" />
-      <recent name="D:\PROJECTS\Laravel\online-passport-app\database\migrations" />
       <recent name="D:\PROJECTS\Laravel\online-passport-app\app\Http\Requests" />
       <recent name="D:\PROJECTS\Laravel\online-passport-app\resources\views\frontend" />
+      <recent name="D:\PROJECTS\Laravel\online-passport-app\resources\views\backend" />
+      <recent name="D:\PROJECTS\Laravel\online-passport-app\resources\views\backend\feedback" />
+      <recent name="D:\PROJECTS\Laravel\online-passport-app\app\Http\Controllers\Backend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\PROJECTS\Laravel\online-passport-app\app\Models" />
@@ -293,7 +258,8 @@
       <workItem from="1622772135100" duration="47654000" />
       <workItem from="1622867990875" duration="8734000" />
       <workItem from="1622885506062" duration="1237000" />
-      <workItem from="1622897541603" duration="8190000" />
+      <workItem from="1622897541603" duration="8568000" />
+      <workItem from="1622912251945" duration="12268000" />
     </task>
     <servers />
   </component>

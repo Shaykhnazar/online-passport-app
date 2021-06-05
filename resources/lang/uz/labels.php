@@ -204,7 +204,7 @@ return [
         'register' =>[
             'welcome' => 'Xush kelibsiz',
             'title' => 'Ro\'yxatdan o\'tish uchun formani to\'ldiring',
-            'form_top' => ' All fields are required.',
+            'form_top' => ' Barcha maydonlar to\'ldirilishi shart.',
             'first_name' => 'Ism',
             'last_name' => 'Familiya',
             'email' => 'Email Pochta',
@@ -213,7 +213,7 @@ return [
             'privacy_agree' => 'Men roziman ',
             'submit' => 'Hisob yaratish',
             'forgot' => 'Parolingizni unutdingizmi?',
-            'new_account' => 'Yangi hisob yaratish',
+            'login_account' => 'Hisobga kirish',
         ]
     ]
 ];
