@@ -31,6 +31,9 @@ Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     Route::get('home', 'FrontendController@index')->name('home');
     Route::get('privacy', 'FrontendController@privacy')->name('privacy');
     Route::get('terms', 'FrontendController@terms')->name('terms');
+    Route::get('support', 'FrontendController@support')->name('support');
+    Route::get('contact', 'FrontendController@contact')->name('contact');
+    Route::post('contact', 'FrontendController@contactSubmit')->name('contact.post');
 
     Route::group(['middleware' => ['auth']], function () {
         /*
@@ -87,6 +90,19 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'backend.',
     */
     $module_name = 'notifications';
     $controller_name = 'NotificationsController';
+    Route::get("$module_name", ['as' => "$module_name.index", 'uses' => "$controller_name@index"]);
+    Route::get("$module_name/markAllAsRead", ['as' => "$module_name.markAllAsRead", 'uses' => "$controller_name@markAllAsRead"]);
+    Route::delete("$module_name/deleteAll", ['as' => "$module_name.deleteAll", 'uses' => "$controller_name@deleteAll"]);
+    Route::get("$module_name/{id}", ['as' => "$module_name.show", 'uses' => "$controller_name@show"]);
+
+    /*
+    *
+    *  Messages Feedback Routes
+    *
+    * ---------------------------------------------------------------------
+    */
+    $module_name = 'feedback';
+    $controller_name = 'FeedbackController';
     Route::get("$module_name", ['as' => "$module_name.index", 'uses' => "$controller_name@index"]);
     Route::get("$module_name/markAllAsRead", ['as' => "$module_name.markAllAsRead", 'uses' => "$controller_name@markAllAsRead"]);
     Route::delete("$module_name/deleteAll", ['as' => "$module_name.deleteAll", 'uses' => "$controller_name@deleteAll"]);

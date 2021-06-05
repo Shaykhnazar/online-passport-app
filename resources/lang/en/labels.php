@@ -126,6 +126,22 @@ return [
             ],
 
         ],
+        'passort' => [
+            'passports' => 'Passports',
+            'passport_types' => 'Passport types',
+        ],
+        'customer' => [
+            'name' => 'Physical persons'
+        ],
+        'tickets' => [
+            'name' => 'Tickets'
+        ],
+        'notify' => [
+            'name' => 'Notifications'
+        ],
+        'feedback' => [
+            'name' => 'Messages'
+        ],
         'action'            => 'Action',
         'create'            => 'Create',
         'edit'              => 'Edit',
@@ -149,5 +165,53 @@ return [
             'update'    => 'Update',
         ],
     ],
+    'frontend' => [
+        'common' => [
+            'home' => 'Home',
+            'account' => 'Account',
+            'view_profile_details' => 'View profile details!',
+            'logout_from' => 'Logout from your account!',
+            'login' => 'Login',
+            'login_text' => 'Login to the application',
+            'register' => 'Register',
+            'register_join' => 'Join with us!',
+            'support' => 'Support',
+            'ticket' => 'Send ticket',
+            'contact' => 'Contact',
+            'pages' => 'Pages',
+            'contact_us' => 'Contact Us',
+            'licence' => 'Licence',
+            'privacy' => 'Privacy Policy',
+            'terms' => 'Terms',
+            'subscribe' => 'Subscribe',
+            'subscribe_desc' => 'The latest Impact news, articles, and resources, sent straight to your inbox every month.',
+            'subscribe_desc_bottom' => 'We’ll never share your details. See our ',
+            'email' => 'Email',
+        ],
+        'login' =>[
+            'welcome' => 'Welcome',
+            'title' => 'Use these awesome forms to login or create new account.',
+            'form_top' => 'Sign in with credentials',
+            'email' => 'Email Address',
+            'pass' => 'Password',
+            'remember' => 'Remember my login',
+            'submit' => 'Submit',
+            'forgot' => 'Forgot Your Password?',
+            'new_account' => 'Create new account',
+        ],
+        'register' =>[
+            'title' => 'Please fill up the form below to register.',
+            'form_top' => ' All fields are required.',
+            'first_name' => 'First name',
+            'last_name' => 'Last name',
+            'email' => 'Email Pochta',
+            'pass' => 'Parol',
+            'pass_confirm' => 'Parolni tasdiqlash',
+            'privacy_agree' => 'Men roziman ',
+            'submit' => 'Create Account',
+            'forgot' => 'Parolingizni unutdingizmi?',
+            'new_account' => 'Yangi hisob yaratish',
+        ]
+    ]
 
 ];

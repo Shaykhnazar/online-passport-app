@@ -5,7 +5,7 @@ namespace Modules\Passport\Http\Requests\Backend;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
-class PassportTypeRequest extends FormRequest
+final class PassportTypeRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.

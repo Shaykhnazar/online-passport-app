@@ -12,10 +12,10 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-5 col-lg-6 col-md-8 px-5">
                         <h1 class="text-white">
-                            @lang('Register')
+                            @lang('labels.frontend.common.register')
                         </h1>
                         <p class="text-lead text-white">
-                            @lang("Please fill up the form below to register.")
+                            @lang("labels.frontend.register.title")
                         </p>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
 
                     <div class="card-body px-lg-5 py-lg-5">
                         <div class="text-center text-muted mb-4">
-                            <small> @lang("* All fields are required.") </small>
+                            <small> @lang("labels.frontend.register.form_top") </small>
                         </div>
 
                         @include('flash::message')
@@ -68,7 +68,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" id="first_name" name="first_name" value="{{ old('first_name') }}" placeholder="{{ __('First Name') }}" aria-label="first_name" aria-describedby="first_name" required>
+                                    <input type="text" class="form-control" id="first_name" name="first_name" value="{{ old('first_name') }}" placeholder="{{ __('labels.frontend.register.first_name') }}" aria-label="first_name" aria-describedby="first_name" required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -76,7 +76,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="far fa-user"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" id="last_name" name="last_name" value="{{ old('last_name') }}" placeholder="{{ __('Last Name') }}" aria-label="last_name" aria-describedby="last_name" required>
+                                    <input type="text" class="form-control" id="last_name" name="last_name" value="{{ old('last_name') }}" placeholder="{{ __('labels.frontend.register.last_name') }}" aria-label="last_name" aria-describedby="last_name" required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -84,7 +84,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                     </div>
-                                    <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" placeholder="{{ __('E-Mail Address') }}" aria-label="email" aria-describedby="email" required>
+                                    <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" placeholder="{{ __('labels.frontend.register.email') }}" aria-label="email" aria-describedby="email" required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -92,7 +92,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     </div>
-                                    <input type="password" class="form-control" id="password" name="password" placeholder="@lang('Password')" aria-label="@lang('Password')" aria-describedby="password" required>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="@lang('Password')" aria-label="@lang('labels.frontend.register.pass')" aria-describedby="password" required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -100,7 +100,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     </div>
-                                    <input type="password" class="form-control is-invalid has-danger" id="password_confirmation" name="password_confirmation" placeholder="@lang('Password Confirmation')" aria-label="@lang('password_confirmation')" aria-describedby="password_confirmation" required>
+                                    <input type="password" class="form-control is-invalid has-danger" id="password_confirmation" name="password_confirmation" placeholder="@lang('labels.frontend.register.pass_confirm')" aria-label="@lang('password_confirmation')" aria-describedby="password_confirmation" required>
                                 </div>
                             </div>
 
@@ -109,7 +109,7 @@
                                     <div class="custom-control custom-control-alternative custom-checkbox">
                                         <input class="custom-control-input" id="customCheckRegister" type="checkbox">
                                         <label class="custom-control-label" for="customCheckRegister">
-                                            <span class="text-muted">I agree with the <a href="#!">Privacy Policy</a></span>
+                                            <span class="text-muted">@lang('labels.frontend.register.privacy_agree') <a href="#!">@lang('labels.frontend.common.privacy')</a></span>
                                         </label>
                                     </div>
                                 </div>

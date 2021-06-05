@@ -42,7 +42,7 @@ class GenerateMenus
             ]);
 
             // Submenu: Passports
-            $passport_menu->add('<i class="c-sidebar-nav-icon fas fa-passport"></i> Passports', [
+            $passport_menu->add('<i class="c-sidebar-nav-icon fas fa-passport"></i> '.__('labels.backend.passport.passports'), [
                 'route' => 'backend.passports.index',
                 'class' => 'c-sidebar-nav-item',
             ])
@@ -56,7 +56,7 @@ class GenerateMenus
                 ]);
 
             // Submenu: passport_types
-            $passport_menu->add('<i class="c-sidebar-nav-icon fas fa-sitemap"></i> Passport types', [
+            $passport_menu->add('<i class="c-sidebar-nav-icon fas fa-sitemap"></i> '.__('labels.backend.passport.passport_types'), [
                 'route' => 'backend.passport_types.index',
                 'class' => 'c-sidebar-nav-item',
             ])

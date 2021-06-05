@@ -11,9 +11,9 @@
             <div class="header-body text-center mb-7">
                 <div class="row justify-content-center">
                     <div class="col-xl-5 col-lg-6 col-md-8 px-5">
-                        <h1 class="text-white">@lang('Welcome')</h1>
+                        <h1 class="text-white">@lang('labels.frontend.login.welcome')</h1>
                         <p class="text-lead text-white">
-                            @lang("Use these awesome forms to login or create new account.")
+                            @lang("labels.frontend.login.title")
                         </p>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
 
                     <div class="card-body px-lg-5 py-lg-5">
                         <div class="text-center text-muted mb-4">
-                            <small>Sign in with credentials</small>
+                            <small>@lang('labels.frontend.login.form_top')</small>
                         </div>
 
                         @include('flash::message')
@@ -68,7 +68,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                     </div>
-                                    <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" placeholder="{{ __('E-Mail Address') }}" aria-label="email" aria-describedby="input-email" required>
+                                    <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" placeholder="{{ __('labels.frontend.login.email') }}" aria-label="email" aria-describedby="input-email" required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -76,7 +76,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     </div>
-                                    <input type="password" class="form-control" id="password" name="password" placeholder="@lang('Password')" aria-label="@lang('Password')" aria-describedby="input-password" required>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="@lang('Password')" aria-label="@lang('labels.frontend.login.pass')" aria-describedby="input-password" required>
                                 </div>
                             </div>
                             <div class="row my-4">
@@ -85,7 +85,7 @@
                                         <input class="custom-control-input" name="remember" id="remember" type="checkbox" {{ old('remember') ? 'checked' : '' }}>
                                         <label class="custom-control-label" for="remember">
                                             <span class="text-muted">
-                                                Remember my login
+                                                @lang('labels.frontend.login.remember')
                                             </span>
                                         </label>
                                     </div>
@@ -93,7 +93,7 @@
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary mt-2">
-                                    @lang('Submit')
+                                    @lang('labels.frontend.login.submit')
                                 </button>
                             </div>
                         </form>
@@ -102,13 +102,13 @@
                 <div class="row mt-3">
                     <div class="col-6">
                         <a href="{{ route('password.request') }}" class="text-gray">
-                            <small>{{ __('Forgot Your Password?') }}</small>
+                            <small>{{ __('labels.frontend.login.forgot') }}</small>
                         </a>
                     </div>
                     @if (Route::has('register'))
                     <div class="col-6 text-right">
                         <a href="{{ route('register') }}" class="text-gray">
-                            <small>Create new account</small>
+                            <small>@lang('labels.frontend.login.new_account')</small>
                         </a>
                     </div>
                     @endif

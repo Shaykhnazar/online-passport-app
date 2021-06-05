@@ -25,7 +25,7 @@ class PassportTypeController extends Controller
     public function __construct()
     {
         // Page Title
-        $this->module_title = 'Passport Type';
+        $this->module_title = __('labels.backend.passport.passport_types');
 
         // module name
         $this->module_name = 'passport_types';

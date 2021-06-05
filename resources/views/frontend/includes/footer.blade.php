@@ -14,34 +14,34 @@
             </div>
             <div class="col-6 col-sm-3 col-lg-2 mb-4 mb-lg-0 text-center">
                 <h6>
-                    Pages
+                    @lang('labels.frontend.common.pages')
                 </h6>
                 <ul class="links-vertical">
-                    <li><a target="_blank" href="#">Blog</a></li>
-                    <li><a target="_blank" href="#">Themes</a></li>
-                    <li><a target="_blank" href="#">Support</a></li>
-                    <li><a target="_blank" href="#">Contact Us</a></li>
+{{--                    <li><a target="_blank" href="#">Blog</a></li>--}}
+{{--                    <li><a target="_blank" href="#">Themes</a></li>--}}
+                    <li><a target="_blank" href="#">@lang('labels.frontend.common.support')</a></li>
+                    <li><a target="_blank" href="#">@lang('labels.frontend.common.contact_us')</a></li>
                 </ul>
             </div>
             <div class="col-6 col-sm-3 col-lg-2 mb-4 mb-lg-0 text-center">
                 <h6>
-                    Account
+                    @lang('labels.frontend.common.account')
                 </h6>
                 <ul class="links-vertical">
+{{--                    <li>--}}
+{{--                        <a target="_blank" href="#">Blog</a>--}}
+{{--                    </li>--}}
                     <li>
-                        <a target="_blank" href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="#">License</a>
+                        <a target="_blank" href="#">@lang('labels.frontend.common.licence')</a>
                     </li>
                     @guest
                     @if(user_registration())
                     <li>
-                        <a href="{{ route('register') }}">Register</a>
+                        <a href="{{ route('register') }}">@lang('labels.frontend.common.register')</a>
                     </li>
                     @endif
                     <li>
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}">@lang('labels.frontend.common.login')</a>
                     </li>
                     @else
                     <li>
@@ -49,7 +49,7 @@
                     </li>
                     <li>
                         <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                            Logout
+                            @lang('labels.frontend.common.logout_from')
                         </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
@@ -59,19 +59,19 @@
                 </ul>
             </div>
             <div class="col-12 col-sm-6 col-lg-4">
-                <h6>Subscribe</h6>
-                <p class="font-small">The latest Impact news, articles, and resources, sent straight to your inbox every month.</p>
+                <h6>@lang('labels.frontend.common.subscribe')</h6>
+                <p class="font-small">@lang('labels.frontend.common.subscribe_desc')</p>
                 <form action="#">
                     <div class="form-row">
                         <div class="col-8">
-                            <input type="email" class="form-control mb-2" placeholder="Email Address" required>
+                            <input type="email" class="form-control mb-2" placeholder="{{__('labels.frontend.common.email')}}" required>
                         </div>
                         <div class="col-4">
-                            <button type="submit" class="btn btn-secondary btn-block"><span>Subscribe</span></button>
+                            <button type="submit" class="btn btn-secondary btn-block"><span>@lang('labels.frontend.common.subscribe')</span></button>
                         </div>
                     </div>
                 </form>
-                <small class="mt-2 form-text">We’ll never share your details. See our <a href="{{route('frontend.privacy')}}" class="font-weight-bold text-underline">Privacy Policy</a></small>
+                <small class="mt-2 form-text">@lang('labels.frontend.common.subscribe_desc_bottom') <a href="{{route('frontend.privacy')}}" class="font-weight-bold text-underline">@lang('labels.frontend.common.privacy')</a></small>
             </div>
         </div>
 

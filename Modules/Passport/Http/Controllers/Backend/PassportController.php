@@ -24,7 +24,7 @@ class PassportController extends Controller
     public function __construct()
     {
         // Page Title
-        $this->module_title = 'Passport';
+        $this->module_title = __('labels.backend.passport.passports');
 
         // module name
         $this->module_name = 'passports';
@@ -119,7 +119,6 @@ class PassportController extends Controller
 
                 return view('backend.includes.action_column', compact('module_name', 'data'));
             })
-            // ->editColumn('name', '<strong>{{$name}}</strong> | {{$status_formatted}}')
             ->editColumn('code', function ($data) {
                 return '<strong>' . $data->code . '</strong>';
             })

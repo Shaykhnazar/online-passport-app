@@ -2,5 +2,7 @@
     "Article": false,
     "Tag": false,
     "Comment": false,
-    "Passport": true
+    "Passport": true,
+    "Ticket": true,
+    "Customers": true
 }

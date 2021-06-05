@@ -34,7 +34,7 @@
     <nav id="navbar-main" class="navbar navbar-horizontal navbar-transparent navbar-main navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="{{asset('img/logo-with-text.jpg')}}" height="30">
+                <img src="{{asset('img/passport_logo.png')}}" height="45" >
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
                     <div class="row">
                         <div class="col-6 collapse-brand">
                             <a href="/">
-                                <img src="{{asset('img/logo-with-text-dark.png')}}" height="40">
+                                <img src="{{asset('img/passport_logo.png')}}" height="45">
                             </a>
                         </div>
                         <div class="col-6 collapse-close">
@@ -60,13 +60,13 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a href="{{ route('login') }}" class="nav-link">
-                            <span class="nav-link-inner--text">Login</span>
+                            <span class="nav-link-inner--text">@lang('labels.frontend.common.login')</span>
                         </a>
                     </li>
                     @if (Route::has('register'))
                     <li class="nav-item">
                         <a href="{{ route('register') }}" class="nav-link">
-                            <span class="nav-link-inner--text">Register</span>
+                            <span class="nav-link-inner--text">@lang('labels.frontend.common.register')</span>
                         </a>
                     </li>
                     @endif
@@ -99,14 +99,14 @@
                             <span class="nav-link-inner--text d-lg-none">Github</span>
                         </a>
                     </li>
-                    <li class="nav-item d-none d-lg-block ml-lg-4">
-                        <a href="#" target="_blank" class="btn btn-neutral btn-icon">
-                            <span class="btn-inner--icon">
-                                <i class="fas fa-paper-plane mr-2"></i>
-                            </span>
-                            <span class="nav-link-inner--text">Upgrade to Pro</span>
-                        </a>
-                    </li>
+{{--                    <li class="nav-item d-none d-lg-block ml-lg-4">--}}
+{{--                        <a href="#" target="_blank" class="btn btn-neutral btn-icon">--}}
+{{--                            <span class="btn-inner--icon">--}}
+{{--                                <i class="fas fa-paper-plane mr-2"></i>--}}
+{{--                            </span>--}}
+{{--                            <span class="nav-link-inner--text">Upgrade to Pro</span>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
                 </ul>
             </div>
         </div>

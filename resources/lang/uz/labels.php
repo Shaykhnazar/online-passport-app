@@ -126,28 +126,94 @@ return [
             ],
 
         ],
-        'action'            => 'Action',
-        'create'            => 'Create',
-        'edit'              => 'Edit',
-        'changePassword'    => 'Change Password',
-        'delete'            => 'Delete',
-        'restore'           => 'Restore',
-        'save'              => 'Save',
-        'show'              => 'Show',
-        'update'            => 'Update',
-        'total'             => 'Total',
-        'block'             => 'Block',
-        'unblock'           => 'Unblock',
-        'cancel'            => 'Cancel',
+        'passport' => [
+            'passports' => 'Passportlar',
+            'passport_types' => 'Passport turlari',
+        ],
+        'customer' => [
+            'name' => 'Jismoniy shaxslar'
+        ],
+        'tickets' => [
+            'name' => 'Arizalar'
+        ],
+        'notify' => [
+            'name' => 'Bildirishnomalar'
+        ],
+        'feedback' => [
+            'name' => 'Xabarlar'
+        ],
+
+        'action'            => 'Amallar',
+        'create'            => 'Yaratish',
+        'edit'              => 'O\'zgartirish',
+        'changePassword'    => 'Parolni o\'zgartirish',
+        'delete'            => 'O\'chirish',
+        'restore'           => 'Qayta tiklash',
+        'save'              => 'Saqlash',
+        'show'              => 'Ko\'rsatish',
+        'update'            => 'Yangilash',
+        'total'             => 'Barchasi',
+        'block'             => 'Bloklash',
+        'unblock'           => 'Blokdan olish',
+        'cancel'            => 'Bekor qilish',
     ],
 
     'buttons'   => [
         'general'   => [
-            'create'    => 'Create',
-            'save'      => 'Save',
-            'cancel'    => 'Cancel',
-            'update'    => 'Update',
+            'create'    => 'Yaratish',
+            'save'      => 'Saqlash',
+            'cancel'    => 'Bekor qilish',
+            'update'    => 'Yangilash',
         ],
     ],
 
+    'frontend' => [
+        'common' => [
+            'home' => 'Uy',
+            'account' => 'Hisob',
+            'view_profile_details' => 'Profil ma\'lumotlarini ko\'ring!',
+            'logout_from' => 'Hisobdan chiqish!',
+            'login' => 'Kirish',
+            'login_text' => 'Tizimga kirish',
+            'register' => 'Ro\'yxatdan o\'tish',
+            'register_join' => 'Bizga qo\'shiling!',
+            'support' => 'Yordam',
+            'ticket' => 'Ariza yuborish',
+            'contact' => 'Bog\'lanish',
+            'pages' => 'Bo\'limlar',
+            'contact_us' => 'Biz bilan bog\'lanish',
+            'licence' => 'Litsenziya',
+            'privacy' => 'Havfsizlik siyosati',
+            'terms' => 'Shartlar',
+            'subscribe' => 'Obuna',
+            'subscribe_desc' => 'Har oy to\'g\'ridan-to\'g\'ri pochta qutingizga yuboriladigan so\'nggi Impact yangiliklari, maqolalari va manbalari.',
+            'subscribe_desc_bottom' => 'Biz sizning ma\'lumotlaringizni hech qachon baham ko\'rmaymiz. Shu yerga kiring ',
+            'email' => 'Email',
+        ],
+        'login' =>[
+            'welcome' => 'Xush kelibsiz',
+            'title' => 'Kirish yoki yangi hisob yaratish uchun ushbu ajoyib shakllardan foydalaning.',
+            'form_top' => 'Hisobga olish ma\'lumotlari bilan kiring',
+            'email' => 'Email Pochta',
+            'pass' => 'Parol',
+            'remember' => 'Kirishimni eslab qoling',
+            'submit' => 'Kirish',
+            'forgot' => 'Parolingizni unutdingizmi?',
+            'new_account' => 'Yangi hisob yaratish',
+        ],
+        'register' =>[
+            'welcome' => 'Xush kelibsiz',
+            'title' => 'Ro\'yxatdan o\'tish uchun formani to\'ldiring',
+            'form_top' => ' All fields are required.',
+            'first_name' => 'Ism',
+            'last_name' => 'Familiya',
+            'email' => 'Email Pochta',
+            'pass' => 'Parol',
+            'pass_confirm' => 'Parolni tasdiqlash',
+            'privacy_agree' => 'Men roziman ',
+            'submit' => 'Hisob yaratish',
+            'forgot' => 'Parolingizni unutdingizmi?',
+            'new_account' => 'Yangi hisob yaratish',
+        ]
+    ]
 ];
